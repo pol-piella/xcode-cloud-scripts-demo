@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		11519B38603CC2A55C159EFE /* Pods_XcodeCloudScriptsDemo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E3B89C8F482929B9B0F1E063 /* Pods_XcodeCloudScriptsDemo.framework */; };
 		8D08AA702965CE970008E8C9 /* XcodeCloudScriptsDemoApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D08AA6F2965CE970008E8C9 /* XcodeCloudScriptsDemoApp.swift */; };
 		8D08AA722965CE970008E8C9 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D08AA712965CE970008E8C9 /* ContentView.swift */; };
 		8D08AA742965CE970008E8C9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8D08AA732965CE970008E8C9 /* Assets.xcassets */; };
@@ -14,12 +15,15 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0D9EEF43746A7F0772EFF3AB /* Pods-XcodeCloudScriptsDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-XcodeCloudScriptsDemo.release.xcconfig"; path = "Target Support Files/Pods-XcodeCloudScriptsDemo/Pods-XcodeCloudScriptsDemo.release.xcconfig"; sourceTree = "<group>"; };
 		8D08AA6C2965CE970008E8C9 /* XcodeCloudScriptsDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = XcodeCloudScriptsDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8D08AA6F2965CE970008E8C9 /* XcodeCloudScriptsDemoApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XcodeCloudScriptsDemoApp.swift; sourceTree = "<group>"; };
 		8D08AA712965CE970008E8C9 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		8D08AA732965CE970008E8C9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8D08AA762965CE980008E8C9 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		8D91FB3F2965D01600F1186C /* ci_post_clone.sh */ = {isa = PBXFileReference; lastKnownFileType = text.script.sh; path = ci_post_clone.sh; sourceTree = "<group>"; };
+		E3B89C8F482929B9B0F1E063 /* Pods_XcodeCloudScriptsDemo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_XcodeCloudScriptsDemo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		FC111771B281FB665AACCB43 /* Pods-XcodeCloudScriptsDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-XcodeCloudScriptsDemo.debug.xcconfig"; path = "Target Support Files/Pods-XcodeCloudScriptsDemo/Pods-XcodeCloudScriptsDemo.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -27,18 +31,39 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				11519B38603CC2A55C159EFE /* Pods_XcodeCloudScriptsDemo.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		32D3508007E656ABF9F9508E /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				E3B89C8F482929B9B0F1E063 /* Pods_XcodeCloudScriptsDemo.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		44E68C3A7C2B0C8E9945452D /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				FC111771B281FB665AACCB43 /* Pods-XcodeCloudScriptsDemo.debug.xcconfig */,
+				0D9EEF43746A7F0772EFF3AB /* Pods-XcodeCloudScriptsDemo.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		8D08AA632965CE970008E8C9 = {
 			isa = PBXGroup;
 			children = (
 				8D91FB3E2965CFF900F1186C /* ci_scripts */,
 				8D08AA6E2965CE970008E8C9 /* XcodeCloudScriptsDemo */,
 				8D08AA6D2965CE970008E8C9 /* Products */,
+				44E68C3A7C2B0C8E9945452D /* Pods */,
+				32D3508007E656ABF9F9508E /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -84,6 +109,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 8D08AA7A2965CE980008E8C9 /* Build configuration list for PBXNativeTarget "XcodeCloudScriptsDemo" */;
 			buildPhases = (
+				E580A1CCADFDA8974EF45B91 /* [CP] Check Pods Manifest.lock */,
 				8D08AA682965CE970008E8C9 /* Sources */,
 				8D08AA692965CE970008E8C9 /* Frameworks */,
 				8D08AA6A2965CE970008E8C9 /* Resources */,
@@ -141,6 +167,31 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		E580A1CCADFDA8974EF45B91 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-XcodeCloudScriptsDemo-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		8D08AA682965CE970008E8C9 /* Sources */ = {
@@ -271,6 +322,7 @@
 		};
 		8D08AA7B2965CE980008E8C9 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = FC111771B281FB665AACCB43 /* Pods-XcodeCloudScriptsDemo.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -300,6 +352,7 @@
 		};
 		8D08AA7C2965CE980008E8C9 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0D9EEF43746A7F0772EFF3AB /* Pods-XcodeCloudScriptsDemo.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
