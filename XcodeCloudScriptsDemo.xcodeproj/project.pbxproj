@@ -22,6 +22,7 @@
 		8D08AA732965CE970008E8C9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8D08AA762965CE980008E8C9 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		8D91FB3F2965D01600F1186C /* ci_post_clone.sh */ = {isa = PBXFileReference; lastKnownFileType = text.script.sh; path = ci_post_clone.sh; sourceTree = "<group>"; };
+		8DC253A12965E0F700884403 /* ci_post_xcodebuild.sh */ = {isa = PBXFileReference; lastKnownFileType = text.script.sh; path = ci_post_xcodebuild.sh; sourceTree = "<group>"; };
 		E3B89C8F482929B9B0F1E063 /* Pods_XcodeCloudScriptsDemo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_XcodeCloudScriptsDemo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		FC111771B281FB665AACCB43 /* Pods-XcodeCloudScriptsDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-XcodeCloudScriptsDemo.debug.xcconfig"; path = "Target Support Files/Pods-XcodeCloudScriptsDemo/Pods-XcodeCloudScriptsDemo.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -52,7 +53,6 @@
 				FC111771B281FB665AACCB43 /* Pods-XcodeCloudScriptsDemo.debug.xcconfig */,
 				0D9EEF43746A7F0772EFF3AB /* Pods-XcodeCloudScriptsDemo.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -98,6 +98,7 @@
 			isa = PBXGroup;
 			children = (
 				8D91FB3F2965D01600F1186C /* ci_post_clone.sh */,
+				8DC253A12965E0F700884403 /* ci_post_xcodebuild.sh */,
 			);
 			path = ci_scripts;
 			sourceTree = "<group>";
